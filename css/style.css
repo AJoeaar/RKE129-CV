@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --primary-color: #333333;
+    --primary-light: #fff4e6;
+    --muted-grey: #7d6f6f;
+    --accent-yellow: #fd8b44;
+    --heading-font: "Playfair Display", serif;
+    --body-font: "Roboto", sans-serif;
+    --link-font: "Quicksand", sans-serif;
+
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: var(--primary-light);
+    font-family: var(--body-font);
+    color: var(--primary-color);
+}
+
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    width: 100%;
+
+}
+
+
+header h1{
+    font-family: var(--heading-font);
+    font-weight: 900;
+    font-size: 2.6rem;
+    padding: 1rem 0;
+}
+
+.rating {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 250px;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.rating-stars {
+    display: inline-block;
+}
+
+.rating-stars li {
+    display: inline-block;
+    color: var(--accent-yellow);
+}
+
+.pfp-container {
+    width: 10%;
+    height: auto;
+    margin: auto 0;
+}
+
+.pfp-image {
+    width: 65%;
+    height: auto;
+}
+
+.pfp-image img {
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+    object-position: 50% 30%;
+    border-radius: 50px;
+}
+
+
+.image-container {
+    width: 100%;
+    height: auto;
+}
+
+.cover-image {
+    width: 100%;
+    height: auto;
+}
+
+.cover-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 40%;
+}
+.image-actions {
+    text-align: right;
+}
+
+.image-actions-iconss {
+    list-style: none;
+}
+
+.image-actions-iconss li {
+    display: inline-block;
+    margin: 1.2rem;
+
+}
+.image-actions-iconss li i {
+    color: var(--muted-grey);
+    font-size: 2.2rem;
+}
+
+
+.main{
+    width: 100%;
+    height: auto;
+}
+
+.main-title{
+    font-size: 1.8rem;
+}
+.description{
+    margin: 2rem auto;
+}
+
+.description p {
+    line-height: 1.5rem;
+    margin: 1.5rem 0;
+
+}
+ .country-list-list {
+    list-style: none;
+    margin: 1% 0;
+ }
+
+.aboutme {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.about-list {
+    list-style: none;
+}
+
+.about-list-element-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin:1.1rem auto
+}
+
+.about-list-element-list {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+footer{
+    width: 100%;
+    margin: 3rem 0;
+    text-align: center;
+    list-style: none;
+}
+
+.social-media-list, .contact-link-list {
+    list-style: none;
+}
+
+.social-media-list {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+}
+
+.social-media-list li i {
+    font-size: 6.25rem;
+    color: var(--muted-grey);
+}
+
+.contact-link-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 4rem auto;
+}
+
+.contact-link-list li a {
+    text-decoration: none;
+    color: var(--muted-grey);
+    font-family: var(--link-font);
+    font-size: 1.5rem;
+}
+
+hr {
+    width: 324px;
+    height: 4px;
+    border: none;
+    border-top: 4px solid var(--muted-grey);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+@media (max-width: 480px){
+    .container {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .image-actions {
+        text-align: center;
+    }
+    
+    .ingredients {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .ingredients h2 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .ingredients-dough-list, .ingredients-filling-list {
+        font-size: 1.5rem;
+    }
+
+    .reviews form {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .review-box {
+        grid-column: 1/2;
+    }
+
+    .reviews-btn-container {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding: 2rem;
+    }
+
+}
+.late-note {
+    font-size: 10px;
+    color: red;
+}
+
